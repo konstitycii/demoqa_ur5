@@ -12,8 +12,9 @@ public class DragandDrop {
         Configuration.pageLoadStrategy = "eager";
         Configuration.timeout = 5000; // default 4000
     }
+
     @Test
-    void DragandDrop1() {
+    void dragAndDropTest1() {
         // Открыть страницу Github
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").shouldHave(text("A"));
@@ -24,7 +25,7 @@ public class DragandDrop {
     }
 
     @Test
-    void DragandDrop2(){
+    void dragAndDropTest2() {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").shouldHave(text("A"));
         $("#column-b").shouldHave(text("B"));
@@ -32,5 +33,4 @@ public class DragandDrop {
         $("#column-a").shouldHave(text("B"));
         $("#column-b").shouldHave(text("A"));
     }
-
 }
