@@ -16,7 +16,7 @@ public class EnterprizeTest {
         Configuration.timeout = 5000; // default 4000
     }
     @Test
-    void GitEnterprize() {
+    void GitEnterprizeTest() {
         // Открыть страницу Github
         open("https://github.com/");
         $(".HeaderMenu-nav").find(byText("Solutions")).hover();
